@@ -1,0 +1,27 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "Aplicativo desenvolvido pelo curso gratuito da RocketSeat. O aplicativo visa criar uma plataforma de estudos, em que você pode procurar pelos professores disponíveis com seu\r valor e disciplina correspondente.\r O aplicativo está apenas em 2/5 de seu processo final, no entanto até agora apresenta um layout bastante bonito com uma proposta bastante interessante.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathAbreu/NextlevelWeek-2-Proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathAbreu/NextlevelWeek-2-Proffy/issues"
+  },
+  "homepage": "https://github.com/MathAbreu/NextlevelWeek-2-Proffy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  }
+}

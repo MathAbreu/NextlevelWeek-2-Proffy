@@ -24,5 +24,5 @@ function cloneField(){
     })
 
     //Colocar onde na página ?
-    document.querySelector('#schedule-items').appendChild(fields)
+    document.querySelector('#schedule-items').appendChild(newFieldContainer)
 }
