@@ -58,15 +58,18 @@
 
         <main>
 
-            {%for proffy in proffys %}
-            <article class="teacher-item">
+            {% if proffys == "" %}
+                <p class="no-results"> Nenhum professor encontrado com a sua pesquisa.</p>
+            {% else %}
+                {%for proffy in proffys %}
+                    <article class="teacher-item">
                 <header>
                     <img 
                         src="{{proffy.avatar}}" 
                         alt="{{proffy.name}}">
                     <div>
-                        <strong>Diego Fernandes</strong>
-                        <span>Química</span>
+                        <strong>Nome do Professor</strong>
+                        <span>Matéria</span>
                     </div>
                 </header>
             
@@ -80,9 +83,10 @@
                         <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
                     </a>
                 </footer>
-            </article>
+                    </article>
+                {%endfor%}
+            {% endif %}
 
-            {%endfor%}
             
             
             
